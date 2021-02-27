@@ -5,39 +5,29 @@ import 'package:language_learning_ui/constants.dart';
 class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      showSelectedLabels: false,
-      showUnselectedLabels: false,
-      unselectedIconTheme: IconThemeData(
-        color: Color.fromRGBO(202, 205, 219, 1),
+    return BottomAppBar(
+      child: new Row(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.featured_play_list_outlined),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.person_outline_sharp),
+            onPressed: () {},
+          ),
+        ],
       ),
-      selectedIconTheme: IconThemeData(
-        color: Constants.primaryColor,
-      ),
-      items: [
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(FlutterIcons.home_fea),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(
-            FlutterIcons.calendar_fea,
-          ),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(
-            FlutterIcons.edit_fea,
-          ),
-        ),
-        BottomNavigationBarItem(
-          label: "",
-          icon: Icon(
-            FlutterIcons.user_fea,
-          ),
-        ),
-      ],
     );
   }
 }

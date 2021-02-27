@@ -3,6 +3,8 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:laundry_app_ui/models/order.dart';
+import 'package:laundry_app_ui/pages/single_order.dart';
+import 'package:laundry_app_ui/utils/constants.dart';
 import 'package:laundry_app_ui/utils/helper.dart';
 
 class OrderCard extends StatelessWidget {
@@ -17,7 +19,13 @@ class OrderCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        nextScreen(context, "/single-order");
+        //nextScreen(context, "/single-order");
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SingleOrder(id: order.id),
+          ),
+        );
       },
       child: Container(
         height: ScreenUtil().setHeight(121.0),
@@ -43,7 +51,7 @@ class OrderCard extends StatelessWidget {
                   Text(
                     getOrderStatusText(order.status),
                     style: TextStyle(
-                      color: Color.fromRGBO(19, 22, 33, 1),
+                      color: Constants.headerColor1,
                       fontSize: 16.0,
                     ),
                   ),
@@ -71,7 +79,7 @@ Widget textRow(String textOne, String textTwo) {
       Text(
         "$textOne:",
         style: TextStyle(
-          color: Color.fromRGBO(74, 77, 84, 0.7),
+          color: Constants.headerColor1,
           fontSize: 14.0,
         ),
       ),
@@ -81,7 +89,7 @@ Widget textRow(String textOne, String textTwo) {
       Text(
         textTwo,
         style: TextStyle(
-          color: Color.fromRGBO(19, 22, 33, 1),
+          color: Constants.headerColor1,
           fontSize: 14.0,
         ),
       ),
@@ -97,11 +105,11 @@ Widget getOrderIconWidget(OrderStatus status) {
         height: ScreenUtil().setHeight(37.0),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Color.fromRGBO(221, 40, 81, 0.18),
+          color: Constants.otherColor1,
         ),
         child: Icon(
           FlutterIcons.loader_fea,
-          color: Color.fromRGBO(221, 40, 81, 1),
+          color: Constants.otherColor2,
         ),
       );
     case OrderStatus.DELIVERING:
@@ -110,11 +118,11 @@ Widget getOrderIconWidget(OrderStatus status) {
         height: ScreenUtil().setHeight(37.0),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Color.fromRGBO(255, 99, 2, 0.15),
+          color: Constants.otherColor3,
         ),
         child: Icon(
           FlutterIcons.history_mdi,
-          color: Color.fromRGBO(255, 99, 2, 1),
+          color: Constants.otherColor4,
         ),
       );
     default:
@@ -123,11 +131,11 @@ Widget getOrderIconWidget(OrderStatus status) {
         height: ScreenUtil().setHeight(37.0),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: Color.fromRGBO(221, 40, 81, 0.18),
+          color: Constants.otherColor1,
         ),
         child: Icon(
           FlutterIcons.loader_fea,
-          color: Color.fromRGBO(221, 40, 81, 1),
+          color: Constants.otherColor2,
         ),
       );
   }

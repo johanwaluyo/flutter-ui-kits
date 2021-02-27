@@ -5,7 +5,9 @@ import 'package:laundry_app_ui/pages/dashboard.dart';
 import 'package:laundry_app_ui/pages/home.dart';
 import 'package:laundry_app_ui/pages/login.dart';
 import 'package:laundry_app_ui/pages/single_order.dart';
+import 'package:laundry_app_ui/pages/view_all.dart';
 import 'package:laundry_app_ui/utils/constants.dart';
+import 'package:laundry_app_ui/pages/launching.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +28,7 @@ class MyApp extends StatelessWidget {
           textTheme: GoogleFonts.poppinsTextTheme(),
         ),
         initialRoute: "/",
+        home: new LauncherPage(),
         onGenerateRoute: _onGenerateRoute,
       ),
     );
@@ -46,9 +49,13 @@ Route<dynamic> _onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (BuildContext context) {
         return Dashboard();
       });
-    case "/single-order":
+    // case "/single-order":
+    //   return MaterialPageRoute(builder: (BuildContext context) {
+    //     return SingleOrder( detailOrder: ,);
+    //   });
+    case "/viewall":
       return MaterialPageRoute(builder: (BuildContext context) {
-        return SingleOrder();
+        return ViewAll();
       });
     default:
       return MaterialPageRoute(builder: (BuildContext context) {

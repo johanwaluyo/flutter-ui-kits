@@ -1,0 +1,149 @@
+{
+    "detailOrder": [
+      {
+        "id": "536",
+        "estimatedDeliveryDate": "2021-02-22",
+        "subtotalPrice": "80.00",
+        "charge": "20.00",
+        "totalPrice": "100.00",
+        "listItem": [
+           {
+                "typeLaundry": "WASH",
+                "item": "T-shirt(man)",
+                "totalItem": "3",
+                "price": "30.00"                
+            },
+            {
+                "typeLaundry": "WASH",
+                "item": "Jeans(man)",
+                "totalItem": "1",
+                "price": "20.00"                
+            },
+            {
+                "typeLaundry": "IRON",
+                "item": "T-shirt(woman)",
+                "totalItem": "3",
+                "price": "30.00"                
+            }            
+        ]
+      },
+      {
+        "id": "507",
+        "estimatedDeliveryDate": "2021-01-11",
+        "subtotalPrice": "200.00",
+        "charge": "225.00",
+        "totalPrice": "225.00",
+        "listItem": [
+           {
+                "typeLaundry": "WASH",
+                "item": "T-shirt(man)",
+                "totalItem": "3",
+                "price": "30.00"                
+            },
+            {
+                 "typeLaundry": "WASH",
+                 "item": "T-shirt(woman)",
+                 "totalItem": "2",
+                 "price": "40.00"                
+             },
+             {
+                  "typeLaundry": "WASH",
+                  "item": "Pants(man)",
+                  "totalItem": "4",
+                  "price": "80.00"                
+              },
+              {
+                   "typeLaundry": "WASH",
+                   "item": "Jeans(man)",
+                   "totalItem": "1",
+                   "price": "20.00"                
+               },
+               {
+                    "typeLaundry": "IRON",
+                    "item": "T-shirt(woman)",
+                    "totalItem": "3",
+                    "price": "30.00"                
+                }            
+        ]
+      },
+      {
+        "id": "508",
+        "estimatedDeliveryDate": "2021-01-11",
+        "subtotalPrice": "200.00",
+        "charge": "225.00",
+        "totalPrice": "225.00",
+        "listItem": [
+           {
+                "typeLaundry": "WASH",
+                "item": "T-shirt(man)",
+                "totalItem": "3",
+                "price": "30.00"                
+            },
+            {
+                 "typeLaundry": "WASH",
+                 "item": "T-shirt(woman)",
+                 "totalItem": "2",
+                 "price": "40.00"                
+             },
+             {
+                  "typeLaundry": "WASH",
+                  "item": "Pants(man)",
+                  "totalItem": "4",
+                  "price": "80.00"                
+              },
+              {
+                   "typeLaundry": "WASH",
+                   "item": "Jeans(man)",
+                   "totalItem": "1",
+                   "price": "20.00"                
+               },
+               {
+                    "typeLaundry": "IRON",
+                    "item": "T-shirt(woman)",
+                    "totalItem": "3",
+                    "price": "30.00"                
+                }            
+        ]
+      },
+      {
+        "id": "509",
+        "estimatedDeliveryDate": "2021-01-11",
+        "subtotalPrice": "200.00",
+        "charge": "225.00",
+        "totalPrice": "225.00",
+        "listItem": [
+           {
+                "typeLaundry": "WASH",
+                "item": "T-shirt(man)",
+                "totalItem": "3",
+                "price": "30.00"                
+            },
+            {
+                 "typeLaundry": "WASH",
+                 "item": "T-shirt(woman)",
+                 "totalItem": "2",
+                 "price": "40.00"                
+             },
+             {
+                  "typeLaundry": "WASH",
+                  "item": "Pants(man)",
+                  "totalItem": "4",
+                  "price": "80.00"                
+              },
+              {
+                   "typeLaundry": "WASH",
+                   "item": "Jeans(man)",
+                   "totalItem": "1",
+                   "price": "20.00"                
+               },
+               {
+                    "typeLaundry": "IRON",
+                    "item": "T-shirt(woman)",
+                    "totalItem": "3",
+                    "price": "30.00"                
+                }            
+        ]
+      }
+    ]
+}
+

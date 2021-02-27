@@ -20,6 +20,7 @@ class _DashboardState extends State<Dashboard> {
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Constants.scaffoldBackgroundColor,
         buttonBackgroundColor: Constants.primaryColor,
+        animationDuration: Duration(milliseconds: 300),
         items: [
           Icon(
             FlutterIcons.ios_home_ion,
@@ -36,7 +37,7 @@ class _DashboardState extends State<Dashboard> {
             size: 30.0,
             color: activeIndex == 2 ? Colors.white : Color(0xFFC8C9CB),
           ),
-          Icon(
+          /*Icon(
             FlutterIcons.heart_fea,
             size: 30.0,
             color: activeIndex == 3 ? Colors.white : Color(0xFFC8C9CB),
@@ -45,7 +46,7 @@ class _DashboardState extends State<Dashboard> {
             FlutterIcons.setting_ant,
             size: 30.0,
             color: activeIndex == 4 ? Colors.white : Color(0xFFC8C9CB),
-          ),
+          ),*/
         ],
         onTap: (index) {
           setState(() {
@@ -109,7 +110,7 @@ class _DashboardState extends State<Dashboard> {
                                         ),
                                   ),
                                   TextSpan(
-                                    text: "FlutterPanda!",
+                                    text: "LZCarwash!",
                                     style: Theme.of(context)
                                         .textTheme
                                         .headline6

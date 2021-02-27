@@ -62,7 +62,7 @@ class Home extends StatelessWidget {
                   children: [
                     SizedBox(height: 20.0),
                     Text(
-                      "Welcome to Laundree!",
+                      "Welcome to LZCarwash!",
                       style: Theme.of(context).textTheme.headline6.copyWith(
                             fontWeight: FontWeight.w600,
                             color: Color.fromRGBO(19, 22, 33, 1),
@@ -72,7 +72,7 @@ class Home extends StatelessWidget {
                       height: 10.0,
                     ),
                     Text(
-                      "This is the first version of our laundry app. Please sign in or create an account below.",
+                      "This is the first version of our carwash app. Please sign in or create an account below.",
                       style: TextStyle(
                         color: Color.fromRGBO(74, 77, 84, 1),
                         fontSize: 14.0,

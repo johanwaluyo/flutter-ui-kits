@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:laundry_app_ui/models/location.dart';
+import 'package:laundry_app_ui/utils/constants.dart';
 
 class LocationSlider extends StatelessWidget {
   @override
@@ -10,15 +11,27 @@ class LocationSlider extends StatelessWidget {
     // Make a list to represent each card
     List<Location> locations = [
       Location(
-        address: "Kings Street 20",
-        color: Color.fromRGBO(89, 69, 199, 1),
-        state: "Bucharest",
+        address: "Jl. Nusantara",
+        color: Constants.otherColor3,
+        state: "no. 18",
         imagePath: "assets/images/house1.png",
       ),
       Location(
-        address: "Victory Square 18",
-        color: Color.fromRGBO(237, 116, 41, 1),
-        state: "Bucharest",
+        address: "Jl. Pertambangan",
+        color: Constants.otherColor4,
+        state: "no. 149",
+        imagePath: "assets/images/house2.png",
+      ),
+      Location(
+        address: "Jl. Pertambangan",
+        color: Constants.otherColor3,
+        state: "no. 131",
+        imagePath: "assets/images/house1.png",
+      ),
+      Location(
+        address: "Jl. Pertambangan",
+        color: Constants.otherColor4,
+        state: "no. 131",
         imagePath: "assets/images/house2.png",
       )
     ];

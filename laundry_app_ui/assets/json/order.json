@@ -1,0 +1,32 @@
+{
+    "orders": [
+      {
+        "id": "536",
+        "status": "DELIVERING",
+        "arrivalDate": "2021-02-22",
+        "placedDate": "2021-01-10",
+        "deliveryAddress": "Victoria Square"
+      },
+      {
+        "id": "507",
+        "status": "PICKING_UP",
+        "arrivalDate": "2021-01-11",
+        "placedDate": "2021-01-10",
+        "deliveryAddress": "New Times Square"
+      },
+      {
+        "id": "508",
+        "status": "PICKING_UP",
+        "arrivalDate": "2021-01-11",
+        "placedDate": "2021-01-10",
+        "deliveryAddress": "New Times Square"
+      },
+      {
+        "id": "509",
+        "status": "PICKING_UP",
+        "arrivalDate": "2021-01-14",
+        "placedDate": "2021-01-11",
+        "deliveryAddress": "New Times Square"
+      }
+    ]
+  }

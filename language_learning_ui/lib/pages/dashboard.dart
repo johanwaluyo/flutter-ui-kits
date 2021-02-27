@@ -21,39 +21,29 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        unselectedIconTheme: IconThemeData(
-          color: Color.fromRGBO(202, 205, 219, 1),
+      bottomNavigationBar: BottomAppBar(
+        child: new Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.featured_play_list_outlined),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.person_outline_sharp),
+              onPressed: () {},
+            ),
+          ],
         ),
-        selectedIconTheme: IconThemeData(
-          color: Constants.primaryColor,
-        ),
-        items: [
-          BottomNavigationBarItem(
-            label: "",
-            icon: Icon(FlutterIcons.home_fea),
-          ),
-          BottomNavigationBarItem(
-            label: "",
-            icon: Icon(
-              FlutterIcons.calendar_fea,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: "",
-            icon: Icon(
-              FlutterIcons.edit_fea,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: "",
-            icon: Icon(
-              FlutterIcons.user_fea,
-            ),
-          ),
-        ],
       ),
       body: SingleChildScrollView(
         child: SafeArea(

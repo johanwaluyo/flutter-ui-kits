@@ -8,8 +8,8 @@ class Location {
 
   Location({
     this.address,
+    this.state,
     this.color,
     this.imagePath,
-    this.state,
   });
 }

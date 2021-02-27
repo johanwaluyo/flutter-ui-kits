@@ -4,12 +4,12 @@ import 'package:laundry_app_ui/utils/constants.dart';
 import 'package:laundry_app_ui/widgets/order_card.dart';
 import 'package:laundry_app_ui/utils/helper.dart';
 
-class LatestOrders extends StatefulWidget {
+class AllOrder extends StatefulWidget {
   @override
-  _LatestOrdersState createState() => _LatestOrdersState();
+  _AllOrderState createState() => _AllOrderState();
 }
 
-class _LatestOrdersState extends State<LatestOrders> {
+class _AllOrderState extends State<AllOrder> {
   final List<Order> orders = [];
   bool _loaded = false;
 
@@ -40,24 +40,12 @@ class _LatestOrdersState extends State<LatestOrders> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Latest Orders",
+                        "Detail Orders",
                         style: TextStyle(
                           color: Constants.headerColor1,
                           fontSize: 18.0,
                         ),
                       ),
-                      InkWell(
-                        child: Text(
-                          "View All",
-                          style: TextStyle(
-                            color: Constants.otherColor1,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        onTap: () {
-                          nextScreen(context, "/viewall");
-                        },
-                      )
                     ],
                   ),
                 ),
@@ -82,7 +70,7 @@ class _LatestOrdersState extends State<LatestOrders> {
                       height: 15.0,
                     );
                   },
-                  itemCount: 2,
+                  itemCount: orders.length,
                 )
                 // Let's create an order model
               ],
@@ -103,24 +91,12 @@ class _LatestOrdersState extends State<LatestOrders> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Latest Orders",
+                        "Detail Orders",
                         style: TextStyle(
                           color: Constants.headerColor1,
                           fontSize: 18.0,
                         ),
                       ),
-                      InkWell(
-                        child: Text(
-                          "View All",
-                          style: TextStyle(
-                            color: Constants.otherColor1,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        onTap: () {
-                          nextScreen(context, "/viewall");
-                        },
-                      )
                     ],
                   ),
                 ),
@@ -128,9 +104,7 @@ class _LatestOrdersState extends State<LatestOrders> {
                   height: 50.0,
                 ),
                 new Center(
-                  child: new CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                  ),
+                  child: new CircularProgressIndicator(),
                 )
               ],
             ),
